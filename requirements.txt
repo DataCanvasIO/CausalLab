@@ -1,0 +1,5 @@
+numpy>=1.16.5
+pandas>=0.25.3
+bokeh==3.0.*
+tornado
+ylearn

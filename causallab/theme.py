@@ -1,0 +1,19 @@
+my_theme = dict(
+    attr=dict(
+        tab=dict(
+            sizing_mode='stretch_both',
+        ),
+        Figure=dict(
+            sizing_mode='stretch_both',
+        ),
+        DataTable=dict(
+            sizing_mode='stretch_both',
+        ),
+        Column=dict(
+            sizing_mode='stretch_both',
+        ),
+        Row=dict(
+            sizing_mode='stretch_both',
+        ),
+    ),
+)
