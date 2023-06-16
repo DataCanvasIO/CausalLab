@@ -41,7 +41,6 @@ def read_extra_requirements():
     return extra
 
 
-
 def read_description(file_path='README.md'):
     with open(file_path, encoding='utf-8') as f:
         desc = f.read()
@@ -92,6 +91,9 @@ setup(
     package_data={
     },
     entry_points={
+        'console_scripts': [
+            'causal_lab = causallab.serve:main',
+        ]
     },
     zip_safe=False,
     include_package_data=True,

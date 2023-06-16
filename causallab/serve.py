@@ -77,9 +77,9 @@ def run_cleaner(path, file_pattern='*.tmp', interval=60, keep_duration=3600):
     t.start()
 
 
-def main(argv):
+def main():
     parser = argparse.ArgumentParser(
-        prog=argv[0],
+        prog=sys.argv[0],
         epilog='')
 
     parser.add_argument('-v', '--version', action='version', version=__version__)
@@ -150,6 +150,6 @@ def bkapp():
 # print('argv', sys.argv)
 
 if __name__ == '__main__':
-    main(sys.argv)
+    main()
 elif __name__.startswith('bokeh_app_'):
     bkapp()
